@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+::placeholder {
+  color: white;
+}
+
+
+.darkm {
+  background: hsl(218, 23%, 16%);
+}
+
+.darkt {
+  color: hsl(193, 38%, 86%);
+}
+
+.darkb {
+  color: white;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ricky Github Searcher</title>
+    <link rel="stylesheet" href="css/styles.css" />
+     <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+ <!--      <link rel="stylesheet" href="font-awesome@6.4.0/css/all.min.css"></link> -->
+  </head>
+<body>
+    <div class="w-screen h-screen bg-lightCyan dark:bg-darkBlue flex items-center justify-center
+    flex-col font-mono" id="test-element">
+      <div class="flex justify-between items-center gap-20 w-80">
+        <div class="">
+         <h2 class="text-3xl tracking-wide text-darkBlue dark:text-lightCyan
+         font-bold" id="h2"> devFinder</h2>
+        </div>
+        <div class="">
+         <button id="toggle" class="text-lg dark:text-white font-mono text-black"> 
+           <div class="text">
+             Light <i class="fas fa-sun"></i> 
+           </div>
+           <div class="hidden text-dark">
+             Dark <i class="fas fa-moon"></i> 
+           </div>
+         </button>
+        </div>
+      </div>
+      <div class="container py-2 rounded-lg
+      w-80 m-4 rounded-lg mobile:w-96">
+        <div class="w-full border-1 border-solid border-darkBlue bg-darkGreyBlue py-3 pl-3 rounded-lg flex justify-between mb-4">
+          <i class="fas fa-search transform translate-x-2 translate-y-3
+          text-lightBlue text-xl"></i>
+          <input type="search" name="search" id="search" 
+          placeholder="Search Github Username..." class="bg-darkGreyBlue text-lg
+          text-white px-4 w-52 placeholder-shown:text-sm" />
+          <button class="w-20 py-3 px-2 bg-lightBlue text-white text-sm rounded-lg
+          justify-end mx-1 font-semibold" id="searchBtn">Search</button>
+        </div>
+        
+        <div class="mobile:w-96 border-1 border-solid border-darkBlue bg-darkGreyBlue
+        p-3 rounded-lg mb-3 hidden" id="error-con">
+          <h2 class="text-2xl text-red-500 text-center" id="error"> Error</h2>
+        </div>
+        <!-- Github section -->
+        <div class="mobile:w-96 border-1 border-solid border-darkBlue bg-darkGreyBlue
+        p-3 rounded-lg hidden" id="display">
+            
+          <div class="flex justify-between mobile:items-center">
+            <div class="">
+              <img class="w-24 h-24 mobile:w-20 mobile:h-20 rounded-full" src="" alt="GitHub
+              User" id="image" />
+            </div>
+            <div class="mt-2">
+              <h1 id="name" class="text-2xl text-white font-bold mobile:text-3xl pb-2"> The Octacat</h1>
+               <p id="username" class="text-lightBlue text-xl">octocat</p>
+              <p id="date" class="text-white text-sm mobile:text-lg">Joined 15th of February 2023</p> 
+            </div>
+          </div>
+          <div class="mt-5">
+            <p class="text-sm text-lightCyan tracking-wider" id="description">
+              This is a blank description for the purpose of testing this
+              design...
+            </p>
+            
+            <div class="flex justify-between items-center bg-darkBlue p-6 w-full
+            h-20 my-4 rounded-xl">
+              <div class="flex flex-col">
+                <h3 class="text-sm text-white my-2">Repos</h3>
+                <p id="repos" class="text-2xl text-lightCyan text-center font-bold">47</p>
+              </div>
+              <div class="flex flex-col">
+                <h3 class="text-sm text-white my-2">Followers</h3>
+                <p class="text-2xl text-lightCyan text-center font-bold" id="followers" >12</p>
+              </div>
+              <div class="flex flex-col">
+                <h3 class="text-sm text-white my-2">Following</h3>
+                <p class="text-2xl text-lightCyan text-center font-bold" id="following">2</p>
+              </div>
+            </div>
+            <div class="p-4 flex justify-between">
+              <div class="">
+                <p class="text-lg text-lightCyan" id="email">Email</p>
+              </div>
+              <div class="">
+                <p class="text-lg text-lightCyan" id="twitter"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
