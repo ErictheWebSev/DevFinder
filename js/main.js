@@ -98,15 +98,6 @@ function toggleThemePreference() {
   localStorage.setItem('darkMode', isDark);
   localStorage.setItem('darkModeBtn', isDarkBtn);
   
-// const isDarkMode = localStorage.getItem('darkMode') === 'true';
-//     testElement.classList.toggle('dark', isDarkMode);
-//const isDarkModeText = localStorage.getItem('darkModeText') === 'true';
- //   h2.classList.toggle('darkt', isDarkModeText);
-//     
-// const isDarkModeBtn = localStorage.getItem('darkModeBtn') === 'true';
-//     toggleButton.classList.toggle('dark', isDarkModeBtn);
-
-
 }
 
   toggleButton.addEventListener('click', toggleThemePreference);
@@ -115,7 +106,7 @@ const isDarkMode = localStorage.getItem('darkMode') === 'true';
 const isDarkModeText = localStorage.getItem('darkModeText') === 'true';
     h2.classList.toggle('darkt', isDarkModeText);
     
-const isDarkModeBtn = localStorage.getItem('darkModeBtn') === 'false';
+const isDarkModeBtn = localStorage.getItem('darkModeBtn') === 'true';
     toggleButton.classList.toggle('darkb', isDarkModeBtn);
   
 });

@@ -13,13 +13,13 @@
 
 
 .darkm {
-  background: hsl(218, 23%, 16%);
+  background: hsl(193, 38%, 86%);
 }
 
 .darkt {
-  color: hsl(193, 38%, 86%);
+  color: hsl(218, 23%, 16%);
 }
 
 .darkb {
-  color: white;
+  color: black;
 }
